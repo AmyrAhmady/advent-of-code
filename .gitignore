@@ -1,0 +1,7 @@
+
+*.exe
+*.hi
+*.o
+
+target/
+Cargo.lock

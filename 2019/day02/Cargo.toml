@@ -1,0 +1,11 @@
+[package]
+name = "day02"
+version = "0.1.0"
+authors = ["iAmir https://github.com/AmyrAhmady/advent-of-code"]
+edition = "2018"
+
+[dependencies]
+
+[[bin]]
+name = "day02"
+path = "main.rs"
