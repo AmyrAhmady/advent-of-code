@@ -10,8 +10,9 @@ More information about [Advent of Code](https://adventofcode.com/2019/about) is 
 This repository contains code that is used to solve the [riddles](https://adventofcode.com/) posted at [https://adventofcode.com/](https://adventofcode.com/).
 
 ## 2019
-| Day | URL                                                                               | Language |
-|-----|-----------------------------------------------------------------------------------|----------|
-| 1   | [Click here](https://github.com/AmyrAhmady/advent-of-code/tree/master/2019/day01) | Haskell  |
-| 2   | [Click here](https://github.com/AmyrAhmady/advent-of-code/tree/master/2019/day02) | Rust     |
-| 3   | [Click here](https://github.com/AmyrAhmady/advent-of-code/tree/master/2019/day03) | C++      |
+| Day | URL                                                                               | Language   |
+|-----|-----------------------------------------------------------------------------------|------------|
+| 1   | [Click here](https://github.com/AmyrAhmady/advent-of-code/tree/master/2019/day01) | Haskell    |
+| 2   | [Click here](https://github.com/AmyrAhmady/advent-of-code/tree/master/2019/day02) | Rust       |
+| 3   | [Click here](https://github.com/AmyrAhmady/advent-of-code/tree/master/2019/day03) | C++        |
+| 4   | [Click here](https://github.com/AmyrAhmady/advent-of-code/tree/master/2019/day04) | Javascript |
