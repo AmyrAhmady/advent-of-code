@@ -17,3 +17,4 @@ This repository contains code that is used to solve the [riddles](https://advent
 | 3   | [Click here](https://github.com/AmyrAhmady/advent-of-code/tree/master/2019/day03) | C++        |
 | 4   | [Click here](https://github.com/AmyrAhmady/advent-of-code/tree/master/2019/day04) | Javascript |
 | 5   | [Click here](https://github.com/AmyrAhmady/advent-of-code/tree/master/2019/day05) | C#         |
+| 6   | [Click here](https://github.com/AmyrAhmady/advent-of-code/tree/master/2019/day06) | Go         |
