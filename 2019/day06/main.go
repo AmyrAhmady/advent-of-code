@@ -54,8 +54,7 @@ func distanceToSanta(orbitMap map[string]string) int {
 
 func main() {
 
-    var orbitMap map[string]string = make(map[string]string)
-
+	var orbitMap map[string]string = make(map[string]string)
 	file, _ := os.Open("input.txt")
 	defer file.Close()
 
