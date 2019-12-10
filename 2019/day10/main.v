@@ -60,8 +60,9 @@ fn get_asteroid_distance(pos1 StructAsteroid, pos2 StructAsteroid) f64 {
     return math.sqrt(math.pow(pos2.x - pos1.x, 2) + math.pow(pos2.y - pos1.y, 2))
 }
 
-fn do_part_one(asteroids[] StructAsteroid) int {
+fn do_part_one(asteroids[] StructAsteroid) []int {
     mut max := 0
+    mut scanner_asteroid := []int
     for asteroid1 in asteroids
     {
         mut grads := []f64
@@ -79,10 +80,70 @@ fn do_part_one(asteroids[] StructAsteroid) int {
         if grads.len > max
         {
             max = grads.len
+            scanner_asteroid = [asteroid1.x, asteroid1.y]
         }
     }
-    return max
+    return [max, scanner_asteroid[0], scanner_asteroid[1]]
 }
+
+fn do_part_two(asteroids[] StructAsteroid, scanner StructAsteroid) int {
+    mut asteroid_map := map[string][]StructAsteroid
+    mut asteroid_angles := []f64
+    mut asteroid := StructAsteroid {
+        x: 0
+        y: 0
+        dist: 0.0
+        boom: false
+        angle: 0.0
+    }
+    for a, asteroid in asteroids
+    {
+        if scanner.x != asteroid.x || scanner.y != asteroid.y
+        {
+            asteroid.angle = get_asteroid_angles(scanner, asteroid)
+            checks := asteroid_angles.filter(it == asteroid.angle)
+            if checks.len == 0 {
+                asteroid_angles << asteroid.angle
+            }
+            asteroid.dist = get_asteroid_distance(scanner, asteroid)
+            mut temp_arr := asteroid_map[asteroid.angle.str()]
+            temp_arr << asteroid
+            asteroid_map[asteroid.angle.str()] = temp_arr
+        }
+    }
+    mut i := 0
+    for i < 200 {
+        for angle in asteroid_angles
+        {
+            asteroids_arr := asteroid_map[angle.str()]
+            mut nearest := &StructAsteroid {
+                x: 0
+                y: 0
+                dist: 0.0
+                boom: false
+                angle: -1.0
+            }
+            for ast in asteroids_arr
+            {
+                if ast.boom == false {
+                    if nearest.angle == -1.0 || ast.dist < nearest.dist {
+                        nearest = &ast
+                    }
+                }
+            }
+            if nearest.angle != -1.0
+            {
+                nearest.boom = true
+                i++
+                if i == 200 {
+                    return (100 * nearest.x) + nearest.y
+                }
+            }
+        }
+    }
+    return 0
+}
+
 
 pub fn main() 
 {
@@ -90,8 +151,19 @@ pub fn main()
     width := lines[0].len
     height := lines.len
     asteroid_positions := get_all_asteroids(lines, width, height)
-    result := do_part_one(asteroid_positions) 
+    data := do_part_one(asteroid_positions) 
 
     print("Part1 answer: ")
-    println(result)
+    println(data[0])
+
+    scanner := StructAsteroid {
+        x: data[1]
+        y: data[2]
+        dist: 0.0
+        boom: false
+        angle: 0.0
+    }
+    
+    print("Part2 answer: ")
+    println(do_part_two(asteroid_positions, scanner))
 }
