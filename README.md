@@ -21,3 +21,4 @@ This repository contains code that is used to solve the [riddles](https://advent
 | 7   | [Click here](https://github.com/AmyrAhmady/advent-of-code/tree/master/2019/day07) | Lua        |
 | 8   | [Click here](https://github.com/AmyrAhmady/advent-of-code/tree/master/2019/day08) | PHP        |
 | 9   | [Click here](https://github.com/AmyrAhmady/advent-of-code/tree/master/2019/day09) | TypeScript |
+| 10  | [Click here](https://github.com/AmyrAhmady/advent-of-code/tree/master/2019/day10) | V          |
