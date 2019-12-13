@@ -22,3 +22,6 @@ This repository contains code that is used to solve the [riddles](https://advent
 | 8   | [Click here](https://github.com/AmyrAhmady/advent-of-code/tree/master/2019/day08) | PHP        |
 | 9   | [Click here](https://github.com/AmyrAhmady/advent-of-code/tree/master/2019/day09) | TypeScript |
 | 10  | [Click here](https://github.com/AmyrAhmady/advent-of-code/tree/master/2019/day10) | V          |
+| 11  | [Click here](https://github.com/AmyrAhmady/advent-of-code/tree/master/2019/day11) | Rust       |
+| 12  | [Click here](https://github.com/AmyrAhmady/advent-of-code/tree/master/2019/day12) | C++        |
+| 13  | [Click here](https://github.com/AmyrAhmady/advent-of-code/tree/master/2019/day13) | Rust       |
