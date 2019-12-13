@@ -2,6 +2,6 @@
 name = "intcode"
 version = "1.0.0"
 authors = ["iAmir (Amyr Ahmady)"]
-edition = "2019"
+edition = "2018"
 
 [dependencies]
