@@ -25,3 +25,4 @@ This repository contains code that is used to solve the [riddles](https://advent
 | 11  | [Click here](https://github.com/AmyrAhmady/advent-of-code/tree/master/2019/day11) | Rust       |
 | 12  | [Click here](https://github.com/AmyrAhmady/advent-of-code/tree/master/2019/day12) | C++        |
 | 13  | [Click here](https://github.com/AmyrAhmady/advent-of-code/tree/master/2019/day13) | Rust       |
+| 14  | [Click here](https://github.com/AmyrAhmady/advent-of-code/tree/master/2019/day14) | C++        |
