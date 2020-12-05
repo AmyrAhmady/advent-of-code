@@ -17,6 +17,8 @@ This repository contains code that is used to solve the [riddles](https://advent
 | 1   | [Click here](https://github.com/AmyrAhmady/advent-of-code/tree/master/2020/day01) | Javascript |
 | 2   | [Click here](https://github.com/AmyrAhmady/advent-of-code/tree/master/2020/day02) | Javascript |
 | 3   | [Click here](https://github.com/AmyrAhmady/advent-of-code/tree/master/2020/day03) | Javascript |
+| 4   | [Click here](https://github.com/AmyrAhmady/advent-of-code/tree/master/2020/day04) | Javascript |
+| 5   | [Click here](https://github.com/AmyrAhmady/advent-of-code/tree/master/2020/day05) | Javascript |
 
 ## 2019
 
